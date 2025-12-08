@@ -29,8 +29,8 @@ CREATE TABLE Codebase (
 CREATE TABLE DeveloperCodebase (
     DeveloperID INT NOT NULL,
     CodebaseID INT NOT NULL,
-    
     Role VARCHAR(45),
+
     PRIMARY KEY (DeveloperID, CodebaseID),
     FOREIGN KEY (DeveloperID) REFERENCES Developer(DeveloperID)
         ON DELETE CASCADE
@@ -52,10 +52,11 @@ CREATE TABLE CodebaseHistory (
     FOREIGN KEY (CodebaseID) REFERENCES Codebase(CodebaseID)
         ON DELETE CASCADE
         ON UPDATE CASCADE
+
+        
 );
 
 CREATE TABLE Owner (
-
 
     OwnerID INT AUTO_INCREMENT PRIMARY KEY,
     FirstName VARCHAR(50),
@@ -116,7 +117,6 @@ CREATE TABLE User (
 );
 
 CREATE TABLE UserBot (
-
     UserID INT NOT NULL,
     BotID INT NOT NULL,
     FirstUseDate DATE,
