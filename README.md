@@ -28,4 +28,4 @@ Quick start
 4. Open `app/frontend/index.html` in browser and use the demo UI.
 
 Statement of Original Work:
-This project represents our team's own design and implementation. AI tools were used only for incidental support (e.g., syntax checking), not for content creation.
+This project represents our team's own design and implementation. AI tools were used only for incidental support (e.g., syntax checking, documentation), not for content creation.
