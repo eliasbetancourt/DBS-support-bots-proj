@@ -13,7 +13,8 @@ SELECT
 FROM UserBot
 JOIN User ON UserBot.UserID = User.UserID
 JOIN Bot ON UserBot.BotID = Bot.BotID
-ORDER BY UserBot.FirstUseDate DESC;*/
+ORDER BY UserBot.FirstUseDate DESC;
+*/
 
 +--------+-----------+----------+------------+-------------+-----------------+--------------+-------------+
 | UserID | FirstName | LastName | Department | BotName     | BotType         | FirstUseDate | AccessLevel |
