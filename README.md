@@ -3,10 +3,11 @@
 CISC3500 Term Project — Group E: ZC Inc. Customer Support Bots.
 
 This repository contains:
-- db/: MySQL schema, seed data, and required queries
-- app/backend/: Node.js + Express backend demo that queries the MySQL DB
-- app/frontend/: Minimal HTML/JS frontend that calls the backend APIs
-- docs/: ER diagram placeholder and project report outline
+- **db/**: MySQL schema, seed data, and required queries
+- **app/backend/**: Node.js + Express backend with REST API endpoints
+- **app/frontend/**: Minimal HTML/JS frontend that calls the backend APIs
+- **docs/**: ER diagram and query results
+  - `queryResults/`: Formatted output from all 5 required queries
 
 ## Quick Start
 
@@ -54,6 +55,8 @@ Or run individual queries from the command line:
 ```bash
 mysql -u root -p -e "USE support_bots; SOURCE db/queries/query1.sql;"
 ```
+
+**Pre-generated query results** are available in `docs/queryResults/` for reference.
 
 ### 4. Start Backend Server
 Install dependencies and start the server:
