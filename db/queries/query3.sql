@@ -1,5 +1,13 @@
--- Query to retrieve all developers located in New York (NY)
+-- Query to find developers in New York and display their expertise
 
-SELECT *
+SELECT 
+    DeveloperID,
+    CONCAT(FirstName, ' ', LastName) AS FullName,
+    Alias,
+    PrimaryProgrammingLanguage,
+    YearsExperience,
+    City,
+    State
 FROM Developer
-WHERE State = 'NY';
+WHERE State = 'NY'
+ORDER BY YearsExperience DESC;

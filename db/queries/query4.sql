@@ -1,4 +1,4 @@
--- Query toshow which users used which bots.
+-- Query to show which users used which bots.
 
 SELECT
     User.UserID,

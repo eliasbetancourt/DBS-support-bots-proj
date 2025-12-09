@@ -1,10 +1,11 @@
--- Query to retrieve all bots ordered by their service start date
-
+-- Query to retrieve owners and their bots ordered by the bots' service start date
 
 SELECT
-    BotID,
-    BotName,
-    BotType,
-    ServiceStartDate
-FROM Bot
-ORDER BY ServiceStartDate;
+    Owner.OwnerID,
+    Owner.FirstName,
+    Owner.LastName,
+    Bot.BotName,
+    Bot.ServiceStartDate
+FROM Owner
+JOIN Bot ON Owner.OwnerID = Bot.OwnerID
+ORDER BY Bot.ServiceStartDate;

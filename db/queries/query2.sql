@@ -1,11 +1,14 @@
---Query to retrieve owners and their bots ordered by the bots' service start date
+-- Query to show active bots with their codebase and service duration
 
 SELECT
-    Owner.OwnerID,
-    Owner.FirstName,
-    Owner.LastName,
-    Bot.BotName,
-    Bot.ServiceStartDate
-FROM Owner
-JOIN Bot ON Owner.OwnerID = Bot.OwnerID
-ORDER BY Bot.ServiceStartDate;
+    b.BotID,
+    b.BotName,
+    b.BotType,
+    b.ServiceStartDate,
+    b.ServiceEndDate,
+    c.CodebaseName,
+    c.Language,
+    DATEDIFF(COALESCE(b.ServiceEndDate, CURDATE()), b.ServiceStartDate) AS DaysInService
+FROM Bot b
+JOIN Codebase c ON b.CodebaseID = c.CodebaseID
+ORDER BY DaysInService DESC;
