@@ -1,0 +1,9 @@
++---------+-----------+----------+-------------+------------------+
+| OwnerID | FirstName | LastName | BotName     | ServiceStartDate |
++---------+-----------+----------+-------------+------------------+
+|       2 | David     | Hunter   | TrackMaster | 2022-09-12       |
+|       1 | Sarah     | Coleman  | HelioAssist | 2023-05-01       |
+|       5 | Elena     | Vega     | RetailGuide | 2023-07-30       |
+|       3 | Jasmine   | Reed     | NeuroHelp   | 2023-11-20       |
+|       4 | Marcus    | Stone    | QuickServe  | 2024-02-15       |
++---------+-----------+----------+-------------+------------------+

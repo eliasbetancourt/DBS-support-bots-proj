@@ -1,0 +1,9 @@
++-------+-------------+-----------------+------------------+----------------+---------------------+----------+---------------+
+| BotID | BotName     | BotType         | ServiceStartDate | ServiceEndDate | CodebaseName        | Language | DaysInService |
++-------+-------------+-----------------+------------------+----------------+---------------------+----------+---------------+
+|     2 | TrackMaster | CustomerSupport | 2022-09-12       | NULL           | TrackAI Engine      | Go       |          1184 |
+|     1 | HelioAssist | CustomerSupport | 2023-05-01       | NULL           | SupportFlow Core    | Node.js  |           953 |
+|     5 | RetailGuide | CustomerSupport | 2023-07-30       | NULL           | SupportFlow Core    | Node.js  |           863 |
+|     3 | NeuroHelp   | CustomerSupport | 2023-11-20       | NULL           | BotVision Framework | Python   |           750 |
+|     4 | QuickServe  | CustomerSupport | 2024-02-15       | NULL           | AssistX Neural      | Rust     |           663 |
++-------+-------------+-----------------+------------------+----------------+---------------------+----------+---------------+

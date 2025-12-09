@@ -1,0 +1,8 @@
++-------------+------------------+--------+----------------------------+-----------------+----------+-------+
+| DeveloperID | FullName         | Alias  | PrimaryProgrammingLanguage | YearsExperience | City     | State |
++-------------+------------------+--------+----------------------------+-----------------+----------+-------+
+|           3 | Carlos Hernandez | cHex   | Java                       |               6 | Brooklyn | NY    |
+|           1 | Daniel Kim       | dK_Dev | JavaScript                 |               5 | New York | NY    |
+|           9 | Elise Brown      | eCoder | Node.js                    |               3 | New York | NY    |
+|           6 | Mark Olsen       | mOmega | Rust                       |               2 | New York | NY    |
++-------------+------------------+--------+----------------------------+-----------------+----------+-------+
