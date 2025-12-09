@@ -8,24 +8,55 @@ This repository contains:
 - app/frontend/: Minimal HTML/JS frontend that calls the backend APIs
 - docs/: ER diagram placeholder and project report outline
 
-Quick start
-1. Create a local .env file in `app/backend` with DB credentials:
-   DB_HOST=127.0.0.1
-   DB_PORT=3306
-   DB_USER=root
-   DB_PASSWORD=yourpassword
-   DB_NAME=zc_support_bots
-   PORT=3000
+## Quick Start
 
-2. Run DB schema:
-   mysql -u root -p < db/schema.sql
-   mysql -u root -p zc_support_bots < db/seed-data.sql
+### 1. Install MySQL
+If you don't have MySQL installed:
+```bash
+brew install mysql
+brew services start mysql
+mysql_secure_installation  # Follow prompts to set root password
+```
 
-3. Install backend deps and start:
-   cd app/backend && npm install
-   npm run start
+### 2. Set Up Database
+Create a local `.env` file in `app/backend` with DB credentials:
+```
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=yourpassword
+DB_NAME=support_bots
+DB_PORT=3306
+PORT=3000
+```
 
-4. Open `app/frontend/index.html` in browser and use the demo UI.
+Run the schema and seed data:
+```bash
+mysql -u root -p < db/schema.sql
+mysql -u root -p support_bots < db/seedData.sql
+```
+
+### 3. Run Queries
+To execute any of the project queries with proper formatting:
+```bash
+mysql -u root -p -t support_bots < db/queries/query1.sql
+mysql -u root -p -t support_bots < db/queries/query2.sql
+mysql -u root -p -t support_bots < db/queries/query3.sql
+mysql -u root -p -t support_bots < db/queries/query4.sql
+mysql -u root -p -t support_bots < db/queries/query5.sql
+```
+
+The `-t` flag formats output as a nice table with borders.
+
+### 4. Start Backend Server
+Install dependencies and start the server:
+```bash
+cd app/backend
+npm install
+npm start
+```
+
+### 5. Open Frontend
+Open `app/frontend/index.html` in your browser to use the demo UI.
 
 Statement of Original Work:
 This project represents our team's own design and implementation. AI tools were used only for incidental support (e.g., syntax checking, documentation), not for content creation.
