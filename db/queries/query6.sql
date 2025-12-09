@@ -5,5 +5,3 @@
 SELECT BotType, COUNT(*) AS BotCount
 FROM Bot
 GROUP BY BotType;
-BotType
-BotCount
