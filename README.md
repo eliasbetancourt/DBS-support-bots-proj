@@ -36,16 +36,24 @@ mysql -u root -p support_bots < db/seedData.sql
 ```
 
 ### 3. Run Queries
-To execute any of the project queries with proper formatting:
+To execute any of the project queries with proper formatting, connect to MySQL:
 ```bash
-mysql -u root -p -t support_bots < db/queries/query1.sql
-mysql -u root -p -t support_bots < db/queries/query2.sql
-mysql -u root -p -t support_bots < db/queries/query3.sql
-mysql -u root -p -t support_bots < db/queries/query4.sql
-mysql -u root -p -t support_bots < db/queries/query5.sql
+mysql -u root -p support_bots
 ```
 
-The `-t` flag formats output as a nice table with borders.
+Then at the `mysql>` prompt, run:
+```sql
+SOURCE db/queries/query1.sql;
+SOURCE db/queries/query2.sql;
+SOURCE db/queries/query3.sql;
+SOURCE db/queries/query4.sql;
+SOURCE db/queries/query5.sql;
+```
+
+Or run individual queries from the command line:
+```bash
+mysql -u root -p -e "USE support_bots; SOURCE db/queries/query1.sql;"
+```
 
 ### 4. Start Backend Server
 Install dependencies and start the server:

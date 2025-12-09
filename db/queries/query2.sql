@@ -1,8 +1,11 @@
---- Query to count the number of bots for each bot type
+--Query to retrieve owners and their bots ordered by the bots' service start date
 
 SELECT
-    BotType,
-    COUNT(*) AS `Bot Type Count`
-FROM Bot
-GROUP BY BotType
-ORDER BY `Bot Type Count` DESC;
+    Owner.OwnerID,
+    Owner.FirstName,
+    Owner.LastName,
+    Bot.BotName,
+    Bot.ServiceStartDate
+FROM Owner
+JOIN Bot ON Owner.OwnerID = Bot.OwnerID
+ORDER BY Bot.ServiceStartDate;
