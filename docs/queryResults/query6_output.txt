@@ -5,12 +5,10 @@
 
 SELECT BotType, COUNT(*) AS BotCount
 FROM Bot
-GROUP BY BotType;
-
-*/
+GROUP BY BotType;*/
 
 +-----------------+----------+
 | BotType         | BotCount |
 +-----------------+----------+
-| CustomerSupport |        5 |
+| CustomerSupport |       13 |
 +-----------------+----------+

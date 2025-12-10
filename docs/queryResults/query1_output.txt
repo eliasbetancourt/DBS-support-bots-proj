@@ -9,15 +9,22 @@ SELECT
     Bot.ServiceStartDate
 FROM Owner
 JOIN Bot ON Owner.OwnerID = Bot.OwnerID
-ORDER BY Bot.ServiceStartDate;
-*/
+ORDER BY Bot.ServiceStartDate;*/
 
-+---------+-----------+----------+-------------+------------------+
-| OwnerID | FirstName | LastName | BotName     | ServiceStartDate |
-+---------+-----------+----------+-------------+------------------+
-|       2 | David     | Hunter   | TrackMaster | 2022-09-12       |
-|       1 | Sarah     | Coleman  | HelioAssist | 2023-05-01       |
-|       5 | Elena     | Vega     | RetailGuide | 2023-07-30       |
-|       3 | Jasmine   | Reed     | NeuroHelp   | 2023-11-20       |
-|       4 | Marcus    | Stone    | QuickServe  | 2024-02-15       |
-+---------+-----------+----------+-------------+------------------+
++---------+-------------+-----------+--------------+------------------+
+| OwnerID | FirstName   | LastName  | BotName      | ServiceStartDate |
++---------+-------------+-----------+--------------+------------------+
+|      13 | Daniel      | Rodriguez | AutoSupport  | 2021-11-25       |
+|       8 | Linda       | Martinez  | DataBot      | 2022-01-15       |
+|      12 | Amanda      | Garcia    | KnowledgeBot | 2022-03-10       |
+|      10 | Jennifer    | White     | TicketAssist | 2022-06-18       |
+|       2 | David       | Hunter    | TrackMaster  | 2022-09-12       |
+|       7 | Robert      | Johnson   | VoiceHelper  | 2022-09-20       |
+|       6 | Patricia    | Chen      | ChatAssist   | 2023-04-12       |
+|       1 | Sarah       | Coleman   | HelioAssist  | 2023-05-01       |
+|      11 | Christopher | Lee       | SentimentBot | 2023-07-22       |
+|       5 | Elena       | Vega      | RetailGuide  | 2023-07-30       |
+|       9 | Michael     | Taylor    | SmartReply   | 2023-10-05       |
+|       3 | Jasmine     | Reed      | NeuroHelp    | 2023-11-20       |
+|       4 | Marcus      | Stone     | QuickServe   | 2024-02-15       |
++---------+-------------+-----------+--------------+------------------+

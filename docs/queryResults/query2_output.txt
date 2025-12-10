@@ -15,12 +15,20 @@ JOIN Codebase c ON b.CodebaseID = c.CodebaseID
 ORDER BY DaysInService DESC;
 */
 
-+-------+-------------+-----------------+------------------+----------------+---------------------+----------+---------------+
-| BotID | BotName     | BotType         | ServiceStartDate | ServiceEndDate | CodebaseName        | Language | DaysInService |
-+-------+-------------+-----------------+------------------+----------------+---------------------+----------+---------------+
-|     2 | TrackMaster | CustomerSupport | 2022-09-12       | NULL           | TrackAI Engine      | Go       |          1184 |
-|     1 | HelioAssist | CustomerSupport | 2023-05-01       | NULL           | SupportFlow Core    | Node.js  |           953 |
-|     5 | RetailGuide | CustomerSupport | 2023-07-30       | NULL           | SupportFlow Core    | Node.js  |           863 |
-|     3 | NeuroHelp   | CustomerSupport | 2023-11-20       | NULL           | BotVision Framework | Python   |           750 |
-|     4 | QuickServe  | CustomerSupport | 2024-02-15       | NULL           | AssistX Neural      | Rust     |           663 |
-+-------+-------------+-----------------+------------------+----------------+---------------------+----------+---------------+
++-------+--------------+-----------------+------------------+----------------+---------------------+----------+---------------+
+| BotID | BotName      | BotType         | ServiceStartDate | ServiceEndDate | CodebaseName        | Language | DaysInService |
++-------+--------------+-----------------+------------------+----------------+---------------------+----------+---------------+
+|    13 | AutoSupport  | CustomerSupport | 2021-11-25       | NULL           | AutoReply System    | PHP      |          1475 |
+|     8 | DataBot      | CustomerSupport | 2022-01-15       | NULL           | DataSync Hub        | Java     |          1424 |
+|    12 | KnowledgeBot | CustomerSupport | 2022-03-10       | NULL           | KnowledgeBase AI    | Node.js  |          1370 |
+|    10 | TicketAssist | CustomerSupport | 2022-06-18       | NULL           | TicketBot Core      | Ruby     |          1270 |
+|     2 | TrackMaster  | CustomerSupport | 2022-09-12       | NULL           | TrackAI Engine      | Go       |          1184 |
+|     7 | VoiceHelper  | CustomerSupport | 2022-09-20       | NULL           | VoiceBot Platform   | Node.js  |          1176 |
+|     6 | ChatAssist   | CustomerSupport | 2023-04-12       | NULL           | ChatEngine Pro      | Python   |           972 |
+|     1 | HelioAssist  | CustomerSupport | 2023-05-01       | NULL           | SupportFlow Core    | Node.js  |           953 |
+|    11 | SentimentBot | CustomerSupport | 2023-07-22       | NULL           | SentimentAnalyzer   | Python   |           871 |
+|     5 | RetailGuide  | CustomerSupport | 2023-07-30       | NULL           | SupportFlow Core    | Node.js  |           863 |
+|     9 | SmartReply   | CustomerSupport | 2023-10-05       | NULL           | SmartResponse AI    | Python   |           796 |
+|     3 | NeuroHelp    | CustomerSupport | 2023-11-20       | NULL           | BotVision Framework | Python   |           750 |
+|     4 | QuickServe   | CustomerSupport | 2024-02-15       | NULL           | AssistX Neural      | Rust     |           663 |
++-------+--------------+-----------------+------------------+----------------+---------------------+----------+---------------+

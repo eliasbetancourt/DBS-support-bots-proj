@@ -13,20 +13,24 @@ SELECT
 FROM UserBot
 JOIN User ON UserBot.UserID = User.UserID
 JOIN Bot ON UserBot.BotID = Bot.BotID
-ORDER BY UserBot.FirstUseDate DESC;
-*/
+ORDER BY UserBot.FirstUseDate DESC;*/
 
-+--------+-----------+----------+------------+-------------+-----------------+--------------+-------------+
-| UserID | FirstName | LastName | Department | BotName     | BotType         | FirstUseDate | AccessLevel |
-+--------+-----------+----------+------------+-------------+-----------------+--------------+-------------+
-|      7 | Mason     | Brooks   | Support    | QuickServe  | CustomerSupport | 2024-02-16   | Agent       |
-|      4 | Emma      | Howard   | Support    | NeuroHelp   | CustomerSupport | 2023-12-01   | Supervisor  |
-|     10 | Isabella  | Soto     | Support    | NeuroHelp   | CustomerSupport | 2023-11-23   | Agent       |
-|      5 | Ethan     | Griffin  | Support    | HelioAssist | CustomerSupport | 2023-08-22   | Agent       |
-|      6 | Olivia    | Price    | Retail     | RetailGuide | CustomerSupport | 2023-07-31   | Agent       |
-|      2 | Ava       | Morris   | Support    | HelioAssist | CustomerSupport | 2023-06-10   | Agent       |
-|      8 | Sophia    | Rivera   | Support    | HelioAssist | CustomerSupport | 2023-05-05   | Admin       |
-|      1 | Liam      | Turner   | Support    | HelioAssist | CustomerSupport | 2023-05-02   | Agent       |
-|      9 | Logan     | Carter   | Support    | TrackMaster | CustomerSupport | 2022-10-01   | Agent       |
-|      3 | Noah      | Walker   | Logistics  | TrackMaster | CustomerSupport | 2022-09-15   | Agent       |
-+--------+-----------+----------+------------+-------------+-----------------+--------------+-------------+
++--------+-----------+----------+------------+--------------+-----------------+--------------+-------------+
+| UserID | FirstName | LastName | Department | BotName      | BotType         | FirstUseDate | AccessLevel |
++--------+-----------+----------+------------+--------------+-----------------+--------------+-------------+
+|      7 | Mason     | Brooks   | Support    | QuickServe   | CustomerSupport | 2024-02-16   | Agent       |
+|      4 | Emma      | Howard   | Support    | NeuroHelp    | CustomerSupport | 2023-12-01   | Supervisor  |
+|     10 | Isabella  | Soto     | Support    | NeuroHelp    | CustomerSupport | 2023-11-23   | Agent       |
+|     14 | Charlotte | Reed     | Support    | SmartReply   | CustomerSupport | 2023-10-12   | Agent       |
+|      5 | Ethan     | Griffin  | Support    | HelioAssist  | CustomerSupport | 2023-08-22   | Agent       |
+|      6 | Olivia    | Price    | Retail     | RetailGuide  | CustomerSupport | 2023-07-31   | Agent       |
+|      2 | Ava       | Morris   | Support    | HelioAssist  | CustomerSupport | 2023-06-10   | Agent       |
+|      8 | Sophia    | Rivera   | Support    | HelioAssist  | CustomerSupport | 2023-05-05   | Admin       |
+|      1 | Liam      | Turner   | Support    | HelioAssist  | CustomerSupport | 2023-05-02   | Agent       |
+|     11 | Lucas     | Bennett  | Support    | ChatAssist   | CustomerSupport | 2023-04-15   | Agent       |
+|      9 | Logan     | Carter   | Support    | TrackMaster  | CustomerSupport | 2022-10-01   | Agent       |
+|     12 | Mia       | Foster   | Support    | VoiceHelper  | CustomerSupport | 2022-09-25   | Supervisor  |
+|      3 | Noah      | Walker   | Logistics  | TrackMaster  | CustomerSupport | 2022-09-15   | Agent       |
+|     15 | Aiden     | Murphy   | Support    | TicketAssist | CustomerSupport | 2022-06-20   | Agent       |
+|     13 | Jackson   | Cooper   | Support    | DataBot      | CustomerSupport | 2022-02-10   | Agent       |
++--------+-----------+----------+------------+--------------+-----------------+--------------+-------------+
