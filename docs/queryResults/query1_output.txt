@@ -9,7 +9,9 @@ SELECT
     Bot.ServiceStartDate
 FROM Owner
 JOIN Bot ON Owner.OwnerID = Bot.OwnerID
-ORDER BY Bot.ServiceStartDate;*/
+ORDER BY Bot.ServiceStartDate;
+
+*/
 
 +---------+-------------+-----------+--------------+------------------+
 | OwnerID | FirstName   | LastName  | BotName      | ServiceStartDate |

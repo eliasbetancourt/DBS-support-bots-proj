@@ -11,7 +11,9 @@ SELECT
     State
 FROM Developer
 WHERE State = 'NY'
-ORDER BY YearsExperience DESC;*/
+ORDER BY YearsExperience DESC;
+
+*/
 
 +-------------+------------------+--------+----------------------------+-----------------+----------+-------+
 | DeveloperID | FullName         | Alias  | PrimaryProgrammingLanguage | YearsExperience | City     | State |

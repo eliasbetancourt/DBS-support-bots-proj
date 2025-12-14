@@ -1,8 +1,8 @@
 USE support_bots;
 
--- ==========================================
+-- ————————————————————————————
 -- DEVELOPER
--- ==========================================
+-- ————————————————————————————
 
 INSERT INTO Developer (LastName, FirstName, Alias, PrimaryProgrammingLanguage, YearsExperience, City, State, CustomAttribute)
 VALUES
@@ -23,9 +23,9 @@ VALUES
 ('Anderson', 'Jordan', 'jStack', 'Java', 3, 'Denver', 'CO', 'Microservices engineer');
 
 
--- ==========================================
+-- ————————————————————————————
 -- CODEBASE
--- ==========================================
+-- ————————————————————————————
 
 INSERT INTO Codebase (CodebaseName, ReleaseDate, LatestVersion, Language, ActiveStatus, CustomAttribute)
 VALUES
@@ -44,9 +44,9 @@ VALUES
 ('KnowledgeBase AI', '2021-09-30', '2.7.5', 'Node.js', 'Stable', 'FAQ and knowledge management');
 
 
--- ==========================================
+-- ————————————————————————————
 -- DEVELOPER ↔ CODEBASE (M:N)
--- ==========================================
+-- ————————————————————————————
 
 INSERT INTO DeveloperCodebase (DeveloperID, CodebaseID, Role)
 VALUES
@@ -67,9 +67,9 @@ VALUES
 (15, 10, 'Maintenance Lead');
 
 
--- ==========================================
+-- ————————————————————————————
 -- CODEBASE HISTORY
--- ==========================================
+-- ————————————————————————————
 
 INSERT INTO CodebaseHistory (CodebaseID, ReleaseVersion, ReleaseDate, Language, ActiveStatus, CustomAttribute)
 VALUES
@@ -89,9 +89,9 @@ VALUES
 (9, '1.5.7', '2023-09-10', 'Python', 'Active', 'Enhanced responses');
 
 
--- ==========================================
+-- ————————————————————————————
 -- OWNER
--- ==========================================
+-- ————————————————————————————
 
 INSERT INTO Owner (FirstName, LastName, CompanyName, Phone, Email, YearsInBusiness, CustomAttribute)
 VALUES
@@ -110,9 +110,9 @@ VALUES
 ('Daniel', 'Rodriguez', 'Rodriguez Construction', '555-901-2345', 'd.rodriguez@rodconst.com', 10, 'Construction services');
 
 
--- ==========================================
+-- ————————————————————————————
 -- BOT (SUPERTYPE)
--- ==========================================
+-- ————————————————————————————
 
 INSERT INTO Bot (BotName, UniversalID, TrainingDatasetName, BotType, ServiceStartDate, ServiceEndDate, CustomAttribute, CodebaseID, OwnerID)
 VALUES
@@ -131,9 +131,9 @@ VALUES
 ('AutoSupport', '888-999-000', 'AutoReply-v4', 'CustomerSupport', '2021-11-25', NULL, 'Email automation', 10, 13);
 
 
--- ==========================================
+-- ————————————————————————————
 -- CUSTOMER SUPPORT BOT (SUBTYPE)
--- ==========================================
+-- ————————————————————————————
 
 INSERT INTO CustomerSupportBot (BotID, SupportedPlatforms, PackageTrackingIntegrationLevel, MaxConcurrentSessions, UsesRealTimeTrackingAPI, EscalationRulesetID, ResponseClassificationModel, AvgCustomerWaitTime, ResolutionSuccessRate, CustomAttribute)
 VALUES
@@ -152,9 +152,9 @@ VALUES
 (13, 'Email, Web', 'None', 70, FALSE, 'RS-313', 'Auto-v4', 5.2, 0.84, 'Email automation');
 
 
--- ==========================================
+-- ————————————————————————————
 -- USER TABLE
--- ==========================================
+-- ————————————————————————————
 
 INSERT INTO User (FirstName, LastName, Email, Department, CustomAttribute)
 VALUES
@@ -175,9 +175,9 @@ VALUES
 ('Aiden', 'Murphy', 'aiden.murphy@example.com', 'Support', 'Technical support');
 
 
--- ==========================================
+-- ————————————————————————————
 -- USER ↔ BOT (M:N)
--- ==========================================
+-- ————————————————————————————
 
 INSERT INTO UserBot (UserID, BotID, FirstUseDate, AccessLevel)
 VALUES
