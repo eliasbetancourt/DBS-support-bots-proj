@@ -557,16 +557,61 @@ body {
 
 /* SQL Syntax Highlighting (Simple) */
 .query-code .keyword {
-  color: #cf222e;
+  color: var(--danger);
   font-weight: 600;
 }
 
 .query-code .string {
-  color: #0a3069;
+  color: var(--accent-primary);
 }
 
 .query-code .comment {
   color: var(--text-tertiary);
   font-style: italic;
+}
+
+/* Toast Notifications */
+.toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+  padding: 12px 20px;
+  border-radius: 6px;
+  border: 1px solid var(--border-primary);
+  box-shadow: 0 4px 12px var(--shadow-md);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  max-width: 400px;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.toast-success {
+  background-color: var(--success);
+  color: white;
+  border-color: var(--success);
+}
+
+.toast-error {
+  background-color: var(--danger);
+  color: white;
+  border-color: var(--danger);
+}
+
+/* Accent Link */
+.accent-link {
+  color: var(--accent-primary);
+  text-decoration: none;
+}
+
+.accent-link:hover {
+  text-decoration: underline;
 }
 

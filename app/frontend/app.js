@@ -281,7 +281,7 @@
         <div class="empty-state-text">
           <p><strong>Query execution is disabled in demo mode</strong></p>
           <p>To execute queries, connect to the backend server at <code>http://localhost:3000</code></p>
-          <p>See the <a href="../../README.md" style="color: var(--accent-primary);">README</a> for setup instructions.</p>
+          <p>See the <a href="../../README.md" class="accent-link">README</a> for setup instructions.</p>
         </div>
       </div>
     `;
@@ -334,9 +334,20 @@
   }
 
   function showMessage(message, type = 'info') {
-    // Simple message display (could be enhanced with a toast notification)
-    console.log(`[${type.toUpperCase()}] ${message}`);
-    alert(message);
+    // Create a toast notification element
+    const toast = document.createElement('div');
+    toast.className = `toast toast-${type}`;
+    toast.textContent = message;
+    document.body.appendChild(toast);
+    
+    // Show the toast
+    setTimeout(() => toast.classList.add('show'), 10);
+    
+    // Remove the toast after 3 seconds
+    setTimeout(() => {
+      toast.classList.remove('show');
+      setTimeout(() => toast.remove(), 300);
+    }, 3000);
   }
 
   // Initialize the application when DOM is ready
