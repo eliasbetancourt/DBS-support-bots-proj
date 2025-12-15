@@ -272,29 +272,33 @@
     const resultsSection = document.getElementById('queryResults');
     
     resultsSection.style.display = 'block';
+    resultsContainer.innerHTML = '<div class="empty-state"><div class="empty-state-text"><p>Executing query...</p></div></div>';
     
-    // Since we don't have a backend connection in this demo,
-    // show a placeholder message
-    resultsContainer.innerHTML = `
-      <div class="empty-state">
-        <div class="empty-state-icon">📊</div>
-        <div class="empty-state-text">
-          <p><strong>Query execution is disabled in demo mode</strong></p>
-          <p>To execute queries, connect to the backend server at <code>http://localhost:3000</code></p>
-          <p>See the <a href="../../README.md" class="accent-link">README</a> for setup instructions.</p>
+    // Make API call to backend
+    fetch('http://localhost:3000/api/query', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ sql: state.currentQuery.sql })
+    })
+    .then(res => {
+      if (!res.ok) {
+        throw new Error(`HTTP error! status: ${res.status}`);
+      }
+      return res.json();
+    })
+    .then(data => displayQueryResults(data))
+    .catch(err => {
+      resultsContainer.innerHTML = `
+        <div class="empty-state">
+          <div class="empty-state-icon">⚠️</div>
+          <div class="empty-state-text">
+            <p><strong>Query execution failed</strong></p>
+            <p>${err.message}</p>
+            <p>Make sure the backend server is running at <code>http://localhost:3000</code></p>
+          </div>
         </div>
-      </div>
-    `;
-    
-    // In a real implementation, this would make an API call:
-    // fetch('http://localhost:3000/api/query', {
-    //   method: 'POST',
-    //   headers: { 'Content-Type': 'application/json' },
-    //   body: JSON.stringify({ sql: state.currentQuery.sql })
-    // })
-    // .then(res => res.json())
-    // .then(data => displayQueryResults(data))
-    // .catch(err => showError(err));
+      `;
+    });
   }
 
   function displayQueryResults(data) {

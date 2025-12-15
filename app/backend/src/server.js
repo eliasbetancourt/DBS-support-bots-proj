@@ -7,6 +7,7 @@ import developersRouter from "./routes/developers.js";
 import codebasesRouter from "./routes/codebases.js";
 import customerSupportBotsRouter from "./routes/customerSupportBots.js";
 import userBotsRouter from "./routes/userBots.js";
+import queryRouter from "./routes/query.js";
 
 const app = express();
 app.use(cors());
@@ -20,6 +21,7 @@ app.use("/api/developers", developersRouter);
 app.use("/api/codebases", codebasesRouter);
 app.use("/api/customer-support-bots", customerSupportBotsRouter);
 app.use("/api/user-bots", userBotsRouter);
+app.use("/api/query", queryRouter);
 
 app.listen(3000, () => {
   console.log("Backend running on http://localhost:3000");

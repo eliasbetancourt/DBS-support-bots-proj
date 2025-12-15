@@ -191,6 +191,69 @@ body {
   font-size: 14px;
 }
 
+/* About Section */
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--shadow-md);
+}
+
+.about-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.about-card p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.about-card p:last-child {
+  margin-bottom: 0;
+}
+
+.about-card ul {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-left: 20px;
+}
+
+.about-card ul li {
+  margin-bottom: 8px;
+}
+
+.about-card strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.statement-card {
+  background: var(--accent-subtle);
+  border-color: var(--accent-primary);
+  border-width: 2px;
+}
+
+.statement-card p {
+  color: var(--text-primary);
+  font-style: italic;
+}
+
 /* Table Tabs */
 .table-tabs {
   display: flex;
