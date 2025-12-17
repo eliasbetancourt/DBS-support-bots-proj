@@ -49,6 +49,7 @@ SOURCE db/queries/query2.sql;
 SOURCE db/queries/query3.sql;
 SOURCE db/queries/query4.sql;
 SOURCE db/queries/query5.sql;
+SOURCE db/queries/query6.sql;
 ```
 
 Or run individual queries from the command line:
