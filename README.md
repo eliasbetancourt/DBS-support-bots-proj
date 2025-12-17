@@ -1,6 +1,6 @@
 # DBS-support-bots-proj
 
-CISC3500 Term Project — Group E: ZC Inc. Customer Support Bots.
+CISC3500 Term Project Group E: ZC Inc. Customer Support Bots.
 
 This repository contains:
 - **db/**: MySQL schema, seed data, and required queries
@@ -49,6 +49,7 @@ SOURCE db/queries/query2.sql;
 SOURCE db/queries/query3.sql;
 SOURCE db/queries/query4.sql;
 SOURCE db/queries/query5.sql;
+SOURCE db/queries/query6.sql;
 ```
 
 Or run individual queries from the command line:
